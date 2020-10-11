@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    background-image: linear-gradient(120deg,#B0C4DE, #4169E1);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+
+form input , form button{
+
+padding: 0.5rem;   
+font-size: 1.5rem;
+border: none;
+background: #fff;
+}
+
+form button{
+    background-color:#fff;
+    color: #4169E1;
+    cursor: pointer;
+    transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -ms-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+}
+
+
+form button:hover{
+
+    background-color:  #4169E1;
+    color: #fff;
+}
+
+.todo-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoList{
+
+    min-width: 25%;
+    list-style: none;
+}
+
+.todoDiv{
+    margin: 0.5rem;
+    background: #fff;
+    color: #000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s all ease;
+    -webkit-transition: 0.2s all ease;
+    -moz-transition: 0.2s all ease;
+    -ms-transition: 0.2s all ease;
+    -o-transition: 0.2s all ease;
+}
+
+.todoDiv li{
+
+    flex:  1;
+}
+
+
+.todoDiv .checkBtn ,
+.todoDiv .trashBtn{
+
+    padding: 1rem;
+    border: none;
+    color: #fff;   
+    cursor: pointer;
+    
+}
+
+.fa-check , 
+.fa-trash{
+
+    pointer-events: none;
+}
+
+.todoDiv .newElement{
+
+    padding: 0.5rem;
+} 
+
+
+.todoDiv .checkBtn{
+
+    background-color: rgb(73, 204, 73);
+}
+
+.todoDiv .trashBtn{
+
+    background-color: rgb(243, 41, 41);
+}
+
+.checked{
+
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    -webkit-transform: translateY(8rem) rotateZ(20deg);
+    -moz-transform: translateY(8rem) rotateZ(20deg);
+    -ms-transform: translateY(8rem) rotateZ(20deg);
+    -o-transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none; 
+    color:  #4169E1;
+    width: 8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background:#4169E1 ;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    padding: 0.5rem;
+    transition: all 0.3s ease ;
+    -webkit-transition: all 0.3s ease ;
+    -moz-transition: all 0.3s ease ;
+    -ms-transition: all 0.3s ease ;
+    -o-transition: all 0.3s ease ;
+}
+
+
+.select:hover::after{
+    background: #fff;
+    color: #4169E1;
+}

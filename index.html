@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>Js-TodoList</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!--Font link-->
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+        <!--Css links-->
+        <link rel="stylesheet" href="Css/all.min.css"> 
+        <link rel="stylesheet" href="Css/style.css">
+    </head>
+
+    <body>
+        <header> <h1>Js-TodoList</h1></header>   
+        <form action="">
+            <input type="text" class="todoInput">
+            <button  class="todoBtn" type="submit"><i class="fas fa-plus-circle"></i></button>
+            <div class="select">
+                <select name="todo" class="todo-select">
+                    <option value="all">All</option>
+                    <option value="checked">Checked</option>
+                    <option value="unchecked">Unchecked</option>
+                </select> <!-- ./todo-select -->
+            </div> <!-- ./select -->
+        </form>  <!-- ./form -->
+        <div class="todo-container">
+            <ul class="todoList"></ul>
+        </div> <!-- ./todo-container -->
+        
+
+        <!-- Scripts -->
+        <script src="script.js"></script>
+    </body>
+</html>
